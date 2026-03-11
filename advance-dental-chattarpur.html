@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Advance Dental Chattarpur – Dr. Barkha Aggarwal | Best Dentist in Chattarpur Delhi</title>
+<meta name="description" content="Advanced dental clinic in Chattarpur, New Delhi. Dr. Barkha Aggarwal offers painless dental treatments including implants, root canal, braces & cosmetic dentistry."/>
+<meta name="keywords" content="Best Dentist in Chattarpur, Dental Clinic in Chattarpur Delhi, Dr Barkha Aggarwal Dentist, Advanced Dental Clinic Chattarpur"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --teal: #0a9396;
+    --teal-light: #94d2bd;
+    --teal-dark: #005f73;
+    --blue: #48cae4;
+    --cream: #f8f9fa;
+    --white: #ffffff;
+    --gray: #6c757d;
+    --dark: #1a1a2e;
+    --accent: #ee9b00;
+    --shadow: 0 4px 24px rgba(10,147,150,0.10);
+    --shadow-lg: 0 12px 48px rgba(10,147,150,0.18);
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family:'DM Sans',sans-serif; color:var(--dark); background:var(--white); overflow-x:hidden; }
+
+  /* NAV */
+  nav {
+    position:fixed; top:0; left:0; right:0; z-index:1000;
+    background:rgba(255,255,255,0.97);
+    backdrop-filter:blur(12px);
+    box-shadow:0 2px 20px rgba(0,95,115,0.08);
+    padding:0 5%;
+    display:flex; align-items:center; justify-content:space-between;
+    height:72px; transition:all 0.3s;
+  }
+  .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+  .nav-logo .logo-icon {
+    width:42px; height:42px; background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+    border-radius:10px; display:flex; align-items:center; justify-content:center;
+    font-size:20px;
+  }
+  .nav-logo .logo-text { line-height:1.1; }
+  .nav-logo .logo-text span:first-child { display:block; font-family:'Playfair Display',serif; font-size:15px; font-weight:700; color:var(--teal-dark); }
+  .nav-logo .logo-text span:last-child { display:block; font-size:11px; color:var(--gray); font-weight:400; }
+  .nav-links { display:flex; align-items:center; gap:30px; list-style:none; }
+  .nav-links a { text-decoration:none; color:var(--dark); font-size:14px; font-weight:500; transition:color 0.2s; }
+  .nav-links a:hover { color:var(--teal); }
+  .nav-cta {
+    background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+    color:#fff!important; padding:10px 22px; border-radius:50px;
+    font-size:13px!important; font-weight:600!important;
+    box-shadow:0 4px 15px rgba(10,147,150,0.35);
+    transition:transform 0.2s,box-shadow 0.2s!important;
+  }
+  .nav-cta:hover { transform:translateY(-1px); box-shadow:0 6px 20px rgba(10,147,150,0.45)!important; }
+  .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
+  .hamburger span { width:24px; height:2px; background:var(--dark); border-radius:2px; transition:0.3s; }
+
+  /* HERO */
+  .hero {
+    min-height:100vh; padding:120px 5% 80px;
+    background: linear-gradient(135deg, #e8f8f8 0%, #f0fafa 40%, #e0f4f5 100%);
+    display:flex; align-items:center; position:relative; overflow:hidden;
+  }
+  .hero::before {
+    content:''; position:absolute; top:-100px; right:-100px;
+    width:600px; height:600px; border-radius:50%;
+    background:radial-gradient(circle, rgba(10,147,150,0.12) 0%, transparent 70%);
+  }
+  .hero::after {
+    content:''; position:absolute; bottom:-80px; left:-80px;
+    width:400px; height:400px; border-radius:50%;
+    background:radial-gradient(circle, rgba(72,202,228,0.10) 0%, transparent 70%);
+  }
+  .hero-content { max-width:1200px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; position:relative; z-index:1; }
+  .hero-badge {
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(10,147,150,0.10); border:1px solid rgba(10,147,150,0.20);
+    padding:6px 16px; border-radius:50px; font-size:13px; font-weight:500; color:var(--teal-dark);
+    margin-bottom:20px;
+  }
+  .hero h1 { font-family:'Playfair Display',serif; font-size:clamp(32px,4vw,52px); font-weight:700; line-height:1.15; color:var(--teal-dark); margin-bottom:18px; }
+  .hero h1 span { color:var(--teal); }
+  .hero p { font-size:17px; color:var(--gray); line-height:1.7; margin-bottom:36px; font-weight:300; }
+  .hero-buttons { display:flex; gap:16px; flex-wrap:wrap; }
+  .btn-primary {
+    background:linear-gradient(135deg,var(--teal),var(--teal-dark));
+    color:#fff; padding:15px 32px; border-radius:50px; text-decoration:none;
+    font-weight:600; font-size:15px; box-shadow:0 6px 24px rgba(10,147,150,0.35);
+    transition:transform 0.2s,box-shadow 0.2s; display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-primary:hover { transform:translateY(-2px); box-shadow:0 10px 30px rgba(10,147,150,0.45); }
+  .btn-secondary {
+    background:#fff; color:var(--teal-dark); padding:15px 32px; border-radius:50px;
+    text-decoration:none; font-weight:600; font-size:15px;
+    border:2px solid var(--teal-light); transition:all 0.2s;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-secondary:hover { background:var(--teal); color:#fff; border-color:var(--teal); }
+  .hero-image {
+    position:relative; display:flex; align-items:center; justify-content:center;
+  }
+  .hero-img-wrap {
+    width:100%; max-width:480px; border-radius:30px; overflow:hidden;
+    box-shadow:0 24px 80px rgba(0,95,115,0.22);
+    position:relative;
+  }
+  .hero-img-wrap img { width:100%; height:420px; object-fit:cover; }
+  .hero-img-placeholder {
+    width:100%; height:420px;
+    background:linear-gradient(135deg,#94d2bd,#0a9396,#005f73);
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:12px; color:#fff;
+  }
+  .hero-img-placeholder .big-tooth { font-size:80px; }
+  .hero-img-placeholder p { font-family:'Playfair Display',serif; font-size:20px; text-align:center; }
+  .hero-stats {
+    position:absolute; bottom:-20px; left:-20px;
+    background:#fff; border-radius:16px; padding:16px 24px;
+    box-shadow:var(--shadow-lg); display:flex; gap:24px;
+  }
+  .stat { text-align:center; }
+  .stat .num { font-family:'Playfair Display',serif; font-size:26px; font-weight:700; color:var(--teal); display:block; }
+  .stat .lbl { font-size:11px; color:var(--gray); font-weight:500; }
+
+  /* SECTIONS COMMON */
+  section { padding:90px 5%; }
+  .section-label { font-size:13px; font-weight:600; color:var(--teal); letter-spacing:2px; text-transform:uppercase; margin-bottom:12px; }
+  .section-title { font-family:'Playfair Display',serif; font-size:clamp(28px,3vw,42px); font-weight:700; color:var(--teal-dark); margin-bottom:16px; }
+  .section-sub { font-size:16px; color:var(--gray); line-height:1.7; max-width:560px; font-weight:300; }
+  .container { max-width:1200px; margin:0 auto; }
+
+  /* ABOUT */
+  .about { background:#fff; }
+  .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; }
+  .about-img-col { position:relative; }
+  .about-card {
+    background:linear-gradient(135deg,var(--teal-dark),var(--teal));
+    border-radius:28px; padding:50px 40px; color:#fff; text-align:center;
+    position:relative; overflow:hidden;
+  }
+  .about-card::before {
+    content:''; position:absolute; top:-40px; right:-40px;
+    width:150px; height:150px; border-radius:50%;
+    background:rgba(255,255,255,0.08);
+  }
+  .about-card .doc-avatar {
+    width:120px; height:120px; border-radius:50%;
+    background:rgba(255,255,255,0.15); margin:0 auto 20px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:48px; border:3px solid rgba(255,255,255,0.3);
+  }
+  .about-card h3 { font-family:'Playfair Display',serif; font-size:24px; margin-bottom:6px; }
+  .about-card p { font-size:14px; opacity:0.85; }
+  .exp-badge {
+    position:absolute; top:-15px; right:-15px;
+    background:var(--accent); color:#fff; border-radius:50%;
+    width:75px; height:75px; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; font-weight:700;
+    box-shadow:0 6px 20px rgba(238,155,0,0.4); font-size:11px; text-align:center;
+  }
+  .exp-badge span { font-size:22px; line-height:1; }
+  .about-features { margin-top:30px; display:grid; gap:16px; }
+  .about-feat {
+    display:flex; align-items:flex-start; gap:14px;
+    background:var(--cream); border-radius:14px; padding:16px 20px;
+  }
+  .feat-icon { font-size:22px; flex-shrink:0; margin-top:2px; }
+  .feat-text h4 { font-size:15px; font-weight:600; color:var(--teal-dark); margin-bottom:4px; }
+  .feat-text p { font-size:13px; color:var(--gray); line-height:1.5; }
+
+  /* SERVICES */
+  .services { background:linear-gradient(180deg,#f0fafa,#fff); }
+  .services-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:50px; }
+  .service-card {
+    background:#fff; border-radius:20px; padding:30px 24px;
+    border:1px solid #e8f4f4; text-align:center;
+    transition:transform 0.3s,box-shadow 0.3s,border-color 0.3s;
+    cursor:default;
+  }
+  .service-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:var(--teal-light); }
+  .service-icon {
+    width:64px; height:64px; border-radius:16px; margin:0 auto 18px;
+    background:linear-gradient(135deg,rgba(10,147,150,0.10),rgba(10,147,150,0.06));
+    display:flex; align-items:center; justify-content:center; font-size:28px;
+  }
+  .service-card:hover .service-icon { background:linear-gradient(135deg,var(--teal),var(--teal-dark)); }
+  .service-card h3 { font-size:15px; font-weight:600; color:var(--teal-dark); margin-bottom:8px; }
+  .service-card p { font-size:13px; color:var(--gray); line-height:1.5; }
+
+  /* WHY CHOOSE US */
+  .why { background:#fff; }
+  .why-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:50px; }
+  .why-card {
+    border-radius:20px; padding:36px 28px; text-align:center;
+    background:linear-gradient(135deg,#f0fafa,#e8f8f8);
+    border:1px solid rgba(10,147,150,0.10);
+    transition:transform 0.3s;
+  }
+  .why-card:hover { transform:translateY(-4px); }
+  .why-card .why-num {
+    font-family:'Playfair Display',serif; font-size:42px; font-weight:700;
+    color:var(--teal-light); margin-bottom:10px; line-height:1;
+  }
+  .why-card h3 { font-size:17px; font-weight:600; color:var(--teal-dark); margin-bottom:10px; }
+  .why-card p { font-size:14px; color:var(--gray); line-height:1.6; }
+
+  /* APPOINTMENT */
+  .appointment { background:linear-gradient(135deg,var(--teal-dark) 0%,#003d4d 100%); color:#fff; }
+  .appointment .section-title { color:#fff; }
+  .appointment .section-sub { color:rgba(255,255,255,0.75); }
+  .appt-grid { display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:center; margin-top:20px; }
+  .appt-info { }
+  .appt-info-item { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
+  .appt-info-icon { font-size:28px; }
+  .appt-info-text h4 { font-weight:600; font-size:15px; }
+  .appt-info-text p { font-size:13px; opacity:0.75; }
+  .appt-form { background:rgba(255,255,255,0.06); border-radius:24px; padding:36px; backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.10); }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .form-group { margin-bottom:16px; }
+  .form-group label { display:block; font-size:13px; font-weight:500; margin-bottom:8px; opacity:0.85; }
+  .form-group input, .form-group select, .form-group textarea {
+    width:100%; padding:12px 16px; border-radius:10px;
+    border:1px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.08);
+    color:#fff; font-size:14px; font-family:inherit; outline:none;
+    transition:border-color 0.2s;
+  }
+  .form-group input::placeholder, .form-group textarea::placeholder { opacity:0.5; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:rgba(255,255,255,0.5); }
+  .form-group select option { background:var(--teal-dark); }
+  .form-group textarea { resize:vertical; min-height:90px; }
+  .btn-form {
+    width:100%; padding:15px; border-radius:50px; border:none; cursor:pointer;
+    background:linear-gradient(135deg,#94d2bd,#0a9396);
+    color:#fff; font-size:15px; font-weight:600; font-family:inherit;
+    box-shadow:0 6px 24px rgba(0,0,0,0.2); transition:transform 0.2s,box-shadow 0.2s;
+  }
+  .btn-form:hover { transform:translateY(-2px); box-shadow:0 10px 32px rgba(0,0,0,0.3); }
+
+  /* TESTIMONIALS */
+  .testimonials { background:var(--cream); }
+  .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:50px; }
+  .testi-card {
+    background:#fff; border-radius:20px; padding:32px 28px;
+    box-shadow:0 2px 20px rgba(10,147,150,0.07);
+    border:1px solid #eaf5f5; transition:transform 0.3s;
+  }
+  .testi-card:hover { transform:translateY(-4px); }
+  .stars { color:#f4c542; font-size:16px; margin-bottom:14px; }
+  .testi-card p { font-size:14px; color:var(--gray); line-height:1.7; margin-bottom:20px; font-style:italic; }
+  .testi-author { display:flex; align-items:center; gap:12px; }
+  .author-avatar { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--teal-light),var(--teal)); display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700; font-size:16px; }
+  .author-info strong { display:block; font-size:14px; color:var(--teal-dark); }
+  .author-info span { font-size:12px; color:var(--gray); }
+
+  /* FAQ */
+  .faq { background:#fff; }
+  .faq-list { max-width:750px; margin:50px auto 0; }
+  .faq-item {
+    border:1px solid #e8f4f4; border-radius:14px; margin-bottom:12px;
+    overflow:hidden; transition:box-shadow 0.2s;
+  }
+  .faq-item:hover { box-shadow:var(--shadow); }
+  .faq-q {
+    padding:20px 24px; font-size:15px; font-weight:600; color:var(--teal-dark);
+    cursor:pointer; display:flex; justify-content:space-between; align-items:center;
+    user-select:none;
+  }
+  .faq-icon { font-size:20px; color:var(--teal); transition:transform 0.3s; flex-shrink:0; }
+  .faq-a { padding:0 24px; max-height:0; overflow:hidden; transition:max-height 0.3s, padding 0.3s; }
+  .faq-a p { font-size:14px; color:var(--gray); line-height:1.7; padding-bottom:16px; }
+  .faq-item.open .faq-a { max-height:200px; }
+  .faq-item.open .faq-icon { transform:rotate(45deg); }
+
+  /* LOCATION */
+  .location { background:var(--cream); }
+  .location-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:50px; align-items:start; margin-top:50px; }
+  .location-info { }
+  .contact-item { display:flex; gap:16px; margin-bottom:28px; }
+  .contact-icon { font-size:24px; flex-shrink:0; margin-top:2px; }
+  .contact-text h4 { font-size:15px; font-weight:600; color:var(--teal-dark); margin-bottom:4px; }
+  .contact-text p, .contact-text a { font-size:14px; color:var(--gray); line-height:1.6; text-decoration:none; }
+  .contact-text a:hover { color:var(--teal); }
+  .hours-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:8px; }
+  .hour-row { display:flex; justify-content:space-between; font-size:13px; color:var(--gray); padding:6px 0; border-bottom:1px dashed #ddd; }
+  .hour-row span:last-child { color:var(--teal-dark); font-weight:500; }
+  .map-container { border-radius:20px; overflow:hidden; box-shadow:var(--shadow-lg); height:400px; }
+  .map-container iframe { width:100%; height:100%; border:none; }
+
+  /* FOOTER */
+  footer {
+    background:var(--dark); color:#fff; padding:60px 5% 30px;
+  }
+  .footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:40px; margin-bottom:40px; }
+  .footer-brand .logo-text-f { font-family:'Playfair Display',serif; font-size:20px; font-weight:700; color:var(--teal-light); margin-bottom:12px; }
+  .footer-brand p { font-size:13px; color:rgba(255,255,255,0.55); line-height:1.7; }
+  .footer-col h4 { font-size:14px; font-weight:600; color:var(--teal-light); margin-bottom:16px; letter-spacing:1px; text-transform:uppercase; }
+  .footer-col a { display:block; font-size:13px; color:rgba(255,255,255,0.55); text-decoration:none; margin-bottom:10px; transition:color 0.2s; }
+  .footer-col a:hover { color:var(--teal-light); }
+  .social-links { display:flex; gap:12px; margin-top:16px; }
+  .social-link {
+    width:38px; height:38px; border-radius:10px; background:rgba(255,255,255,0.07);
+    display:flex; align-items:center; justify-content:center; font-size:18px;
+    text-decoration:none; transition:background 0.2s;
+  }
+  .social-link:hover { background:var(--teal); }
+  .footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding-top:24px; display:flex; justify-content:space-between; align-items:center; }
+  .footer-bottom p { font-size:12px; color:rgba(255,255,255,0.35); }
+
+  /* WHATSAPP FLOAT */
+  .whatsapp-float {
+    position:fixed; bottom:28px; right:28px; z-index:999;
+    width:58px; height:58px; background:#25d366; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 24px rgba(37,211,102,0.45);
+    text-decoration:none; transition:transform 0.3s,box-shadow 0.3s;
+    animation:pulse-wa 2.5s infinite;
+  }
+  .whatsapp-float:hover { transform:scale(1.1); box-shadow:0 10px 32px rgba(37,211,102,0.6); }
+  .whatsapp-float svg { width:30px; height:30px; fill:#fff; }
+  @keyframes pulse-wa {
+    0%,100% { box-shadow:0 6px 24px rgba(37,211,102,0.45); }
+    50% { box-shadow:0 6px 32px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.12); }
+  }
+
+  /* SCROLL REVEAL */
+  .reveal { opacity:0; transform:translateY(30px); transition:opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity:1; transform:none; }
+
+  /* MOBILE */
+  @media(max-width:1024px) {
+    .services-grid { grid-template-columns:repeat(2,1fr); }
+    .why-grid { grid-template-columns:repeat(2,1fr); }
+    .footer-grid { grid-template-columns:1fr 1fr; }
+  }
+  @media(max-width:768px) {
+    .nav-links { display:none; }
+    .hamburger { display:flex; }
+    .hero-content { grid-template-columns:1fr; }
+    .hero-image { display:none; }
+    .about-grid { grid-template-columns:1fr; }
+    .appt-grid { grid-template-columns:1fr; }
+    .form-row { grid-template-columns:1fr; }
+    .testi-grid { grid-template-columns:1fr; }
+    .location-grid { grid-template-columns:1fr; }
+    .why-grid { grid-template-columns:1fr; }
+    .footer-grid { grid-template-columns:1fr; }
+    .footer-bottom { flex-direction:column; gap:10px; text-align:center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">🦷</div>
+    <div class="logo-text">
+      <span>Advance Dental Chattarpur</span>
+      <span>Dr. Barkha Aggarwal</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#appointment">Appointment</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#appointment" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="hero-text reveal">
+      <div class="hero-badge">🦷 Advanced Dental Care · New Delhi</div>
+      <h1>Advance Dental Chattarpur –<br/><span>Trusted Dental Care</span><br/>by Dr. Barkha Aggarwal</h1>
+      <p>Providing advanced dental treatments with modern technology and patient-focused care. Your smile deserves the very best.</p>
+      <div class="hero-buttons">
+        <a href="#appointment" class="btn-primary">📅 Book Appointment</a>
+        <a href="tel:+911234567890" class="btn-secondary">📞 Call Now</a>
+      </div>
+    </div>
+    <div class="hero-image reveal" style="transition-delay:0.2s">
+      <div class="hero-img-wrap">
+        <div class="hero-img-placeholder">
+          <div class="big-tooth">🦷</div>
+          <p>Advanced Dental<br/>Care Centre</p>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="num">10+</span><span class="lbl">Yrs Exp</span></div>
+        <div class="stat"><span class="num">5000+</span><span class="lbl">Patients</span></div>
+        <div class="stat"><span class="num">100%</span><span class="lbl">Safe & Hygienic</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-col reveal">
+        <div class="about-card">
+          <div class="doc-avatar">👩‍⚕️</div>
+          <h3>Dr. Barkha Aggarwal</h3>
+          <p>BDS, MDS – Advanced Dentistry<br/>Chattarpur, New Delhi</p>
+          <div class="exp-badge"><span>10+</span>Years</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="section-label">About the Doctor</div>
+        <h2 class="section-title">Meet Dr. Barkha Aggarwal</h2>
+        <p class="section-sub">A trusted name in dental care in Chattarpur, New Delhi — committed to making your dental experience comfortable, painless, and effective.</p>
+        <div class="about-features">
+          <div class="about-feat">
+            <div class="feat-icon">🏆</div>
+            <div class="feat-text"><h4>Experienced Professional</h4><p>Over a decade of experience in advanced dental treatments and complex procedures.</p></div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon">💊</div>
+            <div class="feat-text"><h4>Painless Modern Dentistry</h4><p>Latest techniques and anaesthesia methods to ensure every procedure is completely painless.</p></div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon">❤️</div>
+            <div class="feat-text"><h4>Patient-First Approach</h4><p>Dedicated to patient comfort, transparent communication and long-term oral health.</p></div>
+          </div>
+          <div class="about-feat">
+            <div class="feat-icon">🔬</div>
+            <div class="feat-text"><h4>Advanced Technology</h4><p>State-of-the-art equipment at Cronus Multi-Specialty Hospital for precise diagnosis and treatment.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our Dental Services</h2>
+      <p class="section-sub" style="margin:0 auto;">Comprehensive dental care under one roof — from routine checkups to advanced cosmetic procedures.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal"><div class="service-icon">🦷</div><h3>Dental Checkup</h3><p>Comprehensive oral examination and preventive dental care assessment.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.1s"><div class="service-icon">✨</div><h3>Teeth Cleaning</h3><p>Professional scaling and polishing for spotless, healthy teeth.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.15s"><div class="service-icon">🔧</div><h3>Root Canal Treatment</h3><p>Advanced RCT procedures — painless and fast with modern techniques.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.2s"><div class="service-icon">🦴</div><h3>Dental Implants</h3><p>Permanent tooth replacement that looks and feels completely natural.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.25s"><div class="service-icon">⚕️</div><h3>Tooth Extraction</h3><p>Safe and painless extraction with minimal recovery time.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.3s"><div class="service-icon">😁</div><h3>Braces & Aligners</h3><p>Metal braces and invisible aligners for a perfectly aligned smile.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.35s"><div class="service-icon">💎</div><h3>Teeth Whitening</h3><p>Professional whitening treatments for a brighter, confident smile.</p></div>
+      <div class="service-card reveal" style="transition-delay:0.4s"><div class="service-icon">🌟</div><h3>Cosmetic Dentistry</h3><p>Smile makeovers including veneers, bonding and aesthetic corrections.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why" id="why">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="section-label">Our Promise</div>
+      <h2 class="section-title">Why Choose Us?</h2>
+      <p class="section-sub" style="margin:0 auto;">We go beyond routine dentistry to ensure you leave with a healthy, beautiful smile and complete peace of mind.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal"><div class="why-num">01</div><h3>Advanced Technology</h3><p>Digital X-rays, laser dentistry, and modern equipment for accurate diagnosis and effective treatment.</p></div>
+      <div class="why-card reveal" style="transition-delay:0.1s"><div class="why-num">02</div><h3>Experienced Dentist</h3><p>Dr. Barkha Aggarwal brings 10+ years of expertise in all branches of dentistry.</p></div>
+      <div class="why-card reveal" style="transition-delay:0.2s"><div class="why-num">03</div><h3>Safe & Hygienic</h3><p>Strict sterilisation protocols and a spotlessly clean environment at every visit.</p></div>
+      <div class="why-card reveal" style="transition-delay:0.3s"><div class="why-num">04</div><h3>Affordable Treatment</h3><p>Quality dental care at transparent, pocket-friendly pricing. No hidden costs.</p></div>
+      <div class="why-card reveal" style="transition-delay:0.4s"><div class="why-num">05</div><h3>Patient-Friendly</h3><p>A warm, welcoming atmosphere designed to ease dental anxiety for all ages.</p></div>
+      <div class="why-card reveal" style="transition-delay:0.5s"><div class="why-num">06</div><h3>Multi-Specialty Hospital</h3><p>Located inside Cronus Multi-Specialty Hospital for comprehensive healthcare access.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">What Our Patients Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Dr. Barkha is absolutely wonderful. She made my root canal completely painless. The clinic is very clean and the staff is very caring. Highly recommend!"</p>
+        <div class="testi-author"><div class="author-avatar">R</div><div class="author-info"><strong>Ritu Sharma</strong><span>Chattarpur, Delhi</span></div></div>
+      </div>
+      <div class="testi-card reveal" style="transition-delay:0.1s">
+        <div class="stars">★★★★★</div>
+        <p>"Got my dental implants done here. Dr. Aggarwal explained everything clearly, the procedure was smooth and the results are fantastic. Best dentist in Chattarpur!"</p>
+        <div class="testi-author"><div class="author-avatar">A</div><div class="author-info"><strong>Amit Verma</strong><span>Mehrauli, Delhi</span></div></div>
+      </div>
+      <div class="testi-card reveal" style="transition-delay:0.2s">
+        <div class="stars">★★★★★</div>
+        <p>"My daughter had braces fitted here. Dr. Barkha is so patient and gentle with kids. The clinic is modern and very hygienic. We drive all the way from Vasant Kunj!"</p>
+        <div class="testi-author"><div class="author-avatar">P</div><div class="author-info"><strong>Priya Nair</strong><span>Vasant Kunj, Delhi</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPOINTMENT -->
+<section class="appointment" id="appointment">
+  <div class="container">
+    <div class="appt-grid">
+      <div class="reveal">
+        <div class="section-label" style="color:var(--teal-light)">Book a Visit</div>
+        <h2 class="section-title">Schedule Your Appointment</h2>
+        <p class="section-sub">Take the first step towards a healthier smile. Book an appointment with Dr. Barkha Aggarwal today.</p>
+        <div style="margin-top:36px;">
+          <div class="appt-info-item"><div class="appt-info-icon">📍</div><div class="appt-info-text"><h4>Location</h4><p>Cronus Multi-Specialty Hospital<br/>100 Feet Rd, Chattarpur, New Delhi – 110074</p></div></div>
+          <div class="appt-info-item"><div class="appt-info-icon">🕐</div><div class="appt-info-text"><h4>Working Hours</h4><p>Monday – Saturday: 10 AM – 7 PM<br/>Sunday: Closed</p></div></div>
+          <div class="appt-info-item"><div class="appt-info-icon">📞</div><div class="appt-info-text"><h4>Call Us</h4><p>+91 XXXXX XXXXX</p></div></div>
+        </div>
+      </div>
+      <div class="appt-form reveal" style="transition-delay:0.15s">
+        <div class="form-row">
+          <div class="form-group"><label>Full Name *</label><input type="text" placeholder="Your full name"/></div>
+          <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+        </div>
+        <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"/></div>
+        <div class="form-row">
+          <div class="form-group"><label>Preferred Date *</label><input type="date"/></div>
+          <div class="form-group"><label>Service Required</label>
+            <select>
+              <option>Select a service</option>
+              <option>Dental Checkup</option>
+              <option>Teeth Cleaning</option>
+              <option>Root Canal Treatment</option>
+              <option>Dental Implants</option>
+              <option>Tooth Extraction</option>
+              <option>Braces & Aligners</option>
+              <option>Teeth Whitening</option>
+              <option>Cosmetic Dentistry</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group"><label>Message (Optional)</label><textarea placeholder="Describe your dental concern..."></textarea></div>
+        <button class="btn-form" onclick="submitForm()">📅 Book Appointment</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div style="text-align:center;" class="reveal">
+      <div class="section-label">Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Is root canal treatment painful? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>With modern anaesthesia techniques used at our clinic, root canal treatment is completely painless. Most patients are surprised at how comfortable the procedure actually is.</p></div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How long does a dental implant procedure take? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>The initial implant placement takes about 1–2 hours. The full process including healing and crown placement takes 3–6 months for best long-term results.</p></div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">At what age can my child get braces? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>We recommend an orthodontic evaluation around age 7, but braces are typically placed between ages 10–14. Adults can also get braces or clear aligners at any age.</p></div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">How often should I visit the dentist? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>We recommend a dental checkup and cleaning every 6 months for most patients. Those with specific dental issues may need more frequent visits.</p></div>
+      </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q">Do you offer cashless or insurance-based treatments? <span class="faq-icon">+</span></div>
+        <div class="faq-a"><p>Please contact us directly to discuss insurance and payment options. We strive to make dental care affordable and offer flexible payment plans.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION & CONTACT -->
+<section class="location" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Find Us</div>
+      <h2 class="section-title">Our Location & Contact</h2>
+    </div>
+    <div class="location-grid">
+      <div class="reveal">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text"><h4>Clinic Address</h4><p>Advance Dental Chattarpur<br/>CRONUS MULTI-SPECIALTY HOSPITAL<br/>100 Feet Rd, Near Bank of Baroda<br/>Opp. Aggarwal Dharamshala<br/>Chattarpur Enclave, Chhatarpur<br/>New Delhi, Delhi 110074</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-text"><h4>Phone</h4><a href="tel:+911234567890">+91 XXXXX XXXXX</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-text"><h4>Email</h4><a href="mailto:info@advancedental.in">info@advancedental.in</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div class="contact-text">
+            <h4>Working Hours</h4>
+            <div class="hours-grid">
+              <div class="hour-row"><span>Mon – Fri</span><span>10AM – 7PM</span></div>
+              <div class="hour-row"><span>Saturday</span><span>10AM – 7PM</span></div>
+              <div class="hour-row"><span>Sunday</span><span>Closed</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-container reveal" style="transition-delay:0.15s">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.3622!2d77.1734!3d28.5022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sCronus+Multi+Specialty+Hospital+Chattarpur!5e0!3m2!1sen!2sin!4v1234567890"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text-f">🦷 Advance Dental Chattarpur</div>
+        <p>Advanced dental care with a personal touch. Located at Cronus Multi-Specialty Hospital, Chattarpur, New Delhi. Dr. Barkha Aggarwal and her team are committed to your oral health.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">▶️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Dental Checkup</a>
+        <a href="#">Root Canal</a>
+        <a href="#">Dental Implants</a>
+        <a href="#">Braces & Aligners</a>
+        <a href="#">Teeth Whitening</a>
+        <a href="#">Cosmetic Dentistry</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#about">About Doctor</a>
+        <a href="#services">Our Services</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#appointment">Book Appointment</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="#">📍 Chattarpur, New Delhi</a>
+        <a href="tel:+911234567890">📞 +91 XXXXX XXXXX</a>
+        <a href="mailto:info@advancedental.in">📧 info@advancedental.in</a>
+        <a href="#">🕐 Mon–Sat: 10AM–7PM</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Advance Dental Chattarpur – Dr. Barkha Aggarwal. All rights reserved.</p>
+      <p>Best Dentist in Chattarpur | Dental Clinic in Chattarpur Delhi</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/911234567890?text=Hello%20Dr.%20Barkha%2C%20I%20would%20like%20to%20book%20an%20appointment." class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<script>
+  // Scroll Reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // FAQ Toggle
+  function toggleFaq(item) {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Mobile Menu
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '72px';
+    links.style.left = '0';
+    links.style.right = '0';
+    links.style.background = '#fff';
+    links.style.padding = '20px 5%';
+    links.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+  }
+
+  // Form Submit
+  function submitForm() {
+    alert('Thank you! Your appointment request has been received. Dr. Barkha Aggarwal\'s team will contact you shortly to confirm.');
+  }
+
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    nav.style.boxShadow = window.scrollY > 20 ? '0 4px 30px rgba(0,95,115,0.12)' : '0 2px 20px rgba(0,95,115,0.08)';
+  });
+</script>
+</body>
+</html>
